@@ -6,12 +6,15 @@
   "scripts": {
     "start": "webpack-dev-server -w & nodemon index.js -e html,js,css --ignore public",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "startServer": "nodemon server/index.js "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
     "morgan": "^1.9.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
