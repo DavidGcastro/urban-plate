@@ -1,12 +1,15 @@
 const graphql = require('graphql');
+const _ = require('lodash');
 //Schema describes data. How we can interact with our data.
-
 //2 object types books and authors, relationships and how to query.
-
 const { GraphQLObjectType, GraphQLString, GraphQLSchema } = graphql;
-
 //now we can define types!
 
+let books = [
+  { name: 'Name of the Wind', genre: 'fantasy', id: '1' },
+  { name: 'it', genre: 'horror', id: '2' },
+  { name: 'Jazz', genre: 'fiction', id: '3' }
+];
 const BookType = new GraphQLObjectType({
   //what this book type is all about
   name: 'Book',
@@ -47,6 +50,12 @@ const RootQuery = new GraphQLObjectType({
         //parent = we will use when we look at relationships in data.
         //args = args passed above.
         // we can use args.id;
+        //for this example well use dummyData.
+
+        //first param is the array, second is how to look for it.
+        return _.find(books, { id: args.id });
+        //so what happens when a query comes in?
+        //resolve first where he go through our data, and find the book that matches the book id passed in as an arg.
       }
     }
   }
