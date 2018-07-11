@@ -35,7 +35,8 @@ const RootQuery = new GraphQLObjectType({
     book: {
       //type of data is book type above.
       type: BookType,
-      //Whenever someone makes this query for books, i expect them to pass some args, it's because we are not sure
+      //Whenever someone makes this query for books, i expect them to
+      //pass some args, it's because we are not sure
       //what book they want. Could it be id 1? id 2?
       //this specificies further queries, and its expected.
       //on Front end:
@@ -45,17 +46,18 @@ const RootQuery = new GraphQLObjectType({
       // },
       args: { id: { type: GraphQLString } },
       resolve(parent, args) {
-        //the function where we write code to get data from db/other source.
+        //the function is where we write code to get data from db/other source.
         //will fire when we query.
         //parent = we will use when we look at relationships in data.
         //args = args passed above.
         // we can use args.id;
         //for this example well use dummyData.
-
+ 
         //first param is the array, second is how to look for it.
         return _.find(books, { id: args.id });
         //so what happens when a query comes in?
-        //resolve first where he go through our data, and find the book that matches the book id passed in as an arg.
+        //resolve first where he go through our data, and find the book
+        //that matches the book id passed in as an arg.
       }
     }
   }
