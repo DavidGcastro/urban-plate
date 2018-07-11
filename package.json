@@ -1,10 +1,11 @@
 {
-  "name": "graphql-demo",
+  "name": "urban-plate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server -w & nodemon index.js -e html,js,css --ignore public",
+    "start:dev": "webpack-dev-server -w & nodemon index.js -e html,js,css --ignore public",
+    "start": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "startServer": "nodemon server/index.js "
@@ -13,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
     "express": "^4.16.3",
     "lodash": "^4.17.10",
     "morgan": "^1.9.0",

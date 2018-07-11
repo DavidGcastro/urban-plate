@@ -1,7 +1,6 @@
-const db = require('./server/db/models').db;
-const app = require('./server');
+const db = require('./db/models');
+const app = require('../server/api');
 const PORT = 3000;
-const models = require('./server/db/models');
 
 db.sync() // if you update your db schemas, make sure you drop the tables first and then recreate them
   .then(() => {
