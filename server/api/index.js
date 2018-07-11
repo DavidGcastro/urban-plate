@@ -9,10 +9,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/foods', require('./foodAPI')); // include our routes!
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static('./public'));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'));
+  res.sendFile(path(__dirname, '/public/index.html'));
 }); // Send index.html for any other requests
 
 
