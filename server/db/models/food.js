@@ -9,10 +9,7 @@ const Food = db.define('food', {
   imageurl: {
     type: Sequelize.STRING,
     defaultValue:
-      'https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180',
-    validate: {
-      isUrl: true
-    }
+      'https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180'
   },
   description: {
     type: Sequelize.TEXT
