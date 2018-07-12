@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack-dev-server & nodemon server/index.js -e html,js,css --ignore public",
+    "start:dev": "webpack -w & nodemon server/index.js -e html,js,css --ignore public",
     "start": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
@@ -20,7 +20,8 @@
     "morgan": "^1.9.0",
     "pg": "^7.4.3",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "volleyball": "^1.5.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
