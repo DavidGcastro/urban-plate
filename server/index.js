@@ -9,7 +9,7 @@ const path = require('path');
 app.use(volleyball);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/', require('./api')); // include our routes!
+app.use('/api', require('./api')); // include our routes!
 
 app.use(express.static('./public'));
 

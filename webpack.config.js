@@ -10,7 +10,13 @@ const config = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './public'
+    contentBase: './public',
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000/',
+        secure: false
+      }
+    }
   },
   mode: 'development',
   module: {
