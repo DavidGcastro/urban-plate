@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "chalk": "^2.4.1",
     "express": "^4.16.3",
@@ -35,7 +36,9 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
     "css-loader": "^0.28.11",
+    "mocha": "^5.2.0",
     "node-sass": "^4.9.2",
     "sass-loader": "^7.0.3",
     "sequelize": "^4.38.0",
