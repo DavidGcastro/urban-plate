@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate",
+  "name": "urban-plate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Not your ordinary food site.",
   "main": "index.js",
   "scripts": {
     "start:dev": "webpack-dev-server -w & nodemon server/index.js -e html,js,css --ignore public",
