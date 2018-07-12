@@ -5,7 +5,7 @@ const app = express();
 const volleyball = require('volleyball');
 const bodyParser = require('body-parser');
 const path = require('path');
-//logging middelware
+//logging middleware
 app.use(volleyball);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,7 +14,7 @@ app.use('/api', require('./api')); // include our routes!
 app.use(express.static('./public'));
 
 app.get('*', (req, res) => {
-  res.sendFile(path(__dirname, '/public/index.html'));
+  res.sendFile(path.join(__dirname, '/public/index.html'));
 }); // Send index.html for any other requests
 
 //error handling middleware
