@@ -8,13 +8,13 @@ router.get('/', (req, res, next) => {
     .catch(next);
 });
 
-// //find campus by id
-// campusRouter.get('/:id', (req, res, next) => {
-//   let id = req.params.id;
-//   Campus.find({ where: { id }, include: [{ model: Student }] })
-//     .then(foundCampus => res.send(foundCampus))
-//     .catch(next);
-// });
+//find Food by id
+router.get('/:id', (req, res, next) => {
+  let id = req.params.id;
+  Food.find({ where: { id } })
+    .then(foundFood => res.send(foundFood))
+    .catch(next);
+});
 
 // //create a new Campus
 // campusRouter.post('/', (req, res, next) => {
