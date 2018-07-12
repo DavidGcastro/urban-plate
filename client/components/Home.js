@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import '../styles/global.scss';
 
 export default class Home extends Component {
   render() {
-    return <p>hello David</p>;
+    return (
+      <div className="test">
+        <p>hello David</p>;
+      </div>
+    );
   }
 }
