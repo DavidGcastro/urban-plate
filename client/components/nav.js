@@ -8,7 +8,7 @@ const Nav = () => {
         <li className="nav-item"> The Pantry </li>
         <li className="nav-item"> About </li>
         <li className="nav-item">
-          <img src="../../assets/images/instagram-brand.svg" />
+          <img src="../../assets/images/chipotle-hummus.png" />
         </li>
       </ul>
     </div>
