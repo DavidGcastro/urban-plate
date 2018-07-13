@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <div className="nav-parent">
       <ul className="nav-container">
-        <li className="nav-item"> Store (Coming Soon) </li>
+        <li className="nav-item disabled"> Store (Coming Soon) </li>
         <li className="nav-item"> The Pantry </li>
         <li className="nav-item"> About </li>
         <li className="nav-item">
