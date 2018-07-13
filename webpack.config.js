@@ -29,6 +29,19 @@ const config = {
           presets: ['env', 'stage-2', 'react']
         }
       },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true // webpack@2.x and newer
+            }
+          }
+        ]
+      },
       // use the style-loader/css-loader combos for anything matching the .css extension
       {
         test: /\.css$/,

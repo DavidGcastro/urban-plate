@@ -1,6 +1,7 @@
 @import '/partials/_fonts';
 @import './partials/_colors';
-@import './partials/_globals.scss';
+@import './partials/_globals';
+@import './partials/_nav';
 
 body {
   font-family: $main-font;

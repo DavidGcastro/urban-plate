@@ -11,7 +11,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', require('./api')); // include our routes!
 
-// app.use(express.static('./public'));
+app.use(express.static('./public'));
+
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, '/public/index.html'));
