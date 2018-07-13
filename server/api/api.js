@@ -16,32 +16,4 @@ router.get('/:id', (req, res, next) => {
     .catch(next);
 });
 
-// //create a new Campus
-// campusRouter.post('/', (req, res, next) => {
-//   Campus.create(req.body)
-//     .then(created => res.status(201).json(created))
-//     .catch(next);
-// });
-
-// //delete a campus
-// campusRouter.delete('/:id', (req, res, next) => {
-//   let id = req.params.id;
-//   Campus.destroy({
-//     where: { id }
-//   })
-//     .then(() => res.sendStatus(204))
-//     .catch(next);
-// });
-
-// campusRouter.put('/:id', (req, res, next) => {
-//   let id = req.params.id;
-//   // update all pugs whose age is 7 to have an adoptedStatus of true
-//   Campus.findById(id)
-//     .then(campus => {
-//       campus.update(req.body);
-//       res.sendStatus(202);
-//     })
-//     .catch(next);
-// });
-
 module.exports = router;

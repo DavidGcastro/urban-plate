@@ -1,3 +1,7 @@
+@import '/partials/_fonts';
+@import './partials/_colors';
+@import './partials/_globals.scss';
+
 body {
-  font-family: 'Rubik';
+  font-family: $main-font;
 }
