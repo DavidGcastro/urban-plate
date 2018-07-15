@@ -14,10 +14,15 @@
   align-items: center;
 }
 
+
 .title-logo {
   max-width: 150px;
   flex: 1;
   margin-right: 30px;
+  transition: all 200ms ease-in;
+}
+.title-logo:hover {
+  transform: rotate(-14deg);
 }
 
 .title-about {

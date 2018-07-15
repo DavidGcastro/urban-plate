@@ -25,21 +25,25 @@
   &::after {
     flex: 1;
   }
-}
-.footer-row1-left {
-  display: flex;
-  flex: 2;
-  width: 100px;
-  align-items: flex-end;
-  img{
+
+  .footer-row1-left {
+    display: flex;
+    flex: 2;
+    width: 100px;
+    align-items: flex-end;
+    img {
       margin-right: 30px;
+    }
+
+    p {
+      width: 740px;
+    }
   }
 
-  p {
-    width: 740px;
+  .footer-row1-logo:hover {
+    opacity: 0.5;
   }
 }
-
 .footer-row2 {
   display: flex;
   justify-content: space-between;
@@ -50,6 +54,10 @@
     display: flex;
     width: 400px;
     justify-content: space-between;
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
   .footer-row2-right {
     display: flex;
@@ -62,4 +70,5 @@
 .instagram {
   font-size: 16px;
   color: white;
+  
 }
