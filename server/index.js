@@ -14,9 +14,9 @@ app.use('/', require('./api')); // include our routes!
 app.use(express.static('./public'));
 
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '/public/index.html'));
-// }); // Send index.html for any other requests
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/index.html'));
+}); // Send index.html for any other requests
 
 //error handling middleware
 app.use((err, req, res, next) => {
