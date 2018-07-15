@@ -1,0 +1,27 @@
+.title-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 50px 100px 50px;
+  &::after {
+    content: '';
+    flex: 1;
+  }
+}
+
+.title-innerContainer {
+  display: flex;
+  flex: 2;
+  align-items: center;
+}
+
+.title-logo {
+  max-width: 150px;
+  flex: 1;
+  margin-right: 30px;
+}
+
+.title-about {
+  flex: 1;
+  font-weight: 400;
+  font-size: 2rem;
+}

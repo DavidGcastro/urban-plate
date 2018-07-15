@@ -1,14 +1,16 @@
 .nav-parent {
-  margin: 20px 0;
+  margin: 10px 50px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
   &::before {
     content: '';
     flex: 2;
   }
   .nav-container {
+    flex-wrap: wrap;
     align-content: flex-end;
     flex: 1;
     display: flex;
