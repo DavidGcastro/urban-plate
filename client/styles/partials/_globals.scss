@@ -3,6 +3,14 @@ html {
   margin: 0;
   padding: 0;
 }
+
+* {
+  text-decoration: none; /* no underline */
+  list-style: none;
+  color: black;
+}
+
 .disabled {
-  color: grey;
+  color: grey !important;
+  text-decoration: none;
 }
