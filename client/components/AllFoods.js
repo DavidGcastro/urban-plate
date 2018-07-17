@@ -19,10 +19,15 @@ export default class AllFoods extends Component {
 
   render() {
     return (
-      this.state.foods &&
-      this.state.foods.map((food, idx) => {
-        return <h1 key={food + idx}> {food.name} </h1>;
-      })
+      <div className="allFoods-container">
+        {this.state.foods &&
+          this.state.foods.map((food, idx) => (
+            <div key={food + idx} className="allFoods-child">
+              <h1> {food.name} </h1>
+              <img className="allFoods-img" src={food.imageurl} />
+            </div>
+          ))}
+      </div>
     );
   }
 }

@@ -1,0 +1,41 @@
+@import './_colors.scss';
+.allFoods-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: space-between;
+}
+.allFoods-child {
+  flex: 1;
+  flex-direction: row;
+  margin: 5px;
+  text-align: center;
+  height: 340px;
+  max-width: 340px;
+  background-color: $light-blue;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  transition: all ease 200ms;
+
+  &:hover {
+    transform: scale(0.96);
+  }
+  h1 {
+    font-size: 16px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 32px;
+  }
+}
+
+.allFoods-img {
+  max-width: 300px;
+}
