@@ -18,15 +18,44 @@ export default class AllFoods extends Component {
   }
 
   render() {
+    let colors = [
+      '#98cdff',
+      '#ff9999',
+      '#ffbf97',
+      '#8ccfb9',
+      '#bcb5ff',
+      '#ffeaa9',
+      '#75c1d9',
+      '#c1d989',
+      '#c5c2e2',
+      '#fff5cf',
+      '#93d9d3'
+    ];
+
     return (
       <div className="allFoods-container">
         {this.state.foods &&
-          this.state.foods.map((food, idx) => (
-            <div key={food + idx} className="allFoods-child">
-              <h1> {food.name} </h1>
-              <img className="allFoods-img" src={food.imageurl} />
-            </div>
-          ))}
+          this.state.foods.map(
+            (food, idx) =>
+              (idx === 0 ? (
+                <div
+                  key={food + idx}
+                  style={{ backgroundColor: colors[idx % colors.length] }}
+                  className="allFoods-child-large">
+                  <h1> {food.name} </h1>
+                  <img className="allFoods-img" src={food.imageurl} />
+                </div>
+              ) : (
+                <div
+                  key={food + idx}
+                  style={{ backgroundColor: colors[idx % colors.length] }}
+                  className="allFoods-child">
+                  <h1> {food.name} </h1>
+
+                  <img className="allFoods-img" src={food.imageurl} />
+                </div>
+              ))
+          )}
       </div>
     );
   }

@@ -5,6 +5,7 @@
 @import './partials/_title';
 @import './partials/_footer';
 @import './partials/_allFoods';
+@import './mixins/_foodContainer';
 body {
   font-family: $main-font;
 }
